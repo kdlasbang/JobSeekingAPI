@@ -5,10 +5,9 @@ const Applicant = function(customer) {
   this.FirstName = customer.FirstName;
   this.LastName = customer.LastName;
   this.Email = customer.Email;
-  this.Resume = customer.Resume;
-  this.Skill= customer.Skill;
-  this.Exp= customer.Exp;
-  this.Info= customer.Info;
+  this.Birth = customer.Birth;
+  this.Phone= customer.Phone;
+  this.Address= customer.Address;
 };
 
 Applicant.create = (newCustomer, result) => {
@@ -59,8 +58,8 @@ Applicant.getAll = result => {
 
 Applicant.updateById = (ApplicantID, customer, result) => {
   sql.query(
-    "UPDATE Applicants SET FirstName = ?, LastName = ?, Email = ?,Resume=?,Skill=?,Exp=?,Info=? WHERE ApplicantID = ?",
-    [customer.FirstName, customer.LastName, customer.Email,customer.Resume,customer.Skill,customer.Exp,customer.Info, ApplicantID],
+    "UPDATE Applicants SET FirstName = ?, LastName = ?, Email = ?,Birth=?,Phone=?,Address=? WHERE ApplicantID = ?",
+    [customer.FirstName, customer.LastName, customer.Email,customer.Birth,customer.Phone,customer.Address, ApplicantID],
     (err, res) => {
       if (err) {
         console.log("error: ", err);

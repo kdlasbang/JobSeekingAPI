@@ -14,10 +14,9 @@ exports.create = (req, res) => {
       FirstName: req.body.FirstName,
       LastName: req.body.LastName,
       Email: req.body.Email,
-    Resume : req.body.Resume,
-    Skill : req.body.Skill,
-    Exp : req.body.Exp,
-    Info : req.body.Info
+    Birth : req.body.Birth,
+    Phone : req.body.Phone,
+    Address : req.body.Address
 
     });
   
