@@ -2,6 +2,9 @@ const sql = require("./db.js");
 
 // constructor
 const Applicant = function(customer) {
+
+  //console.log("Applicant customer", customer)
+
   this.FirstName = customer.FirstName;
   this.LastName = customer.LastName;
   this.Email = customer.Email;
@@ -11,6 +14,7 @@ const Applicant = function(customer) {
 };
 
 Applicant.create = (newCustomer, result) => {
+  //console.log("test", newCustomer);
   sql.query("INSERT INTO Applicants SET ?", newCustomer, (err, res) => {
     if (err) {
       console.log("error: ", err);

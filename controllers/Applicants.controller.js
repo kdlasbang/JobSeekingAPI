@@ -8,6 +8,7 @@ exports.create = (req, res) => {
         message: "Content can not be empty!"
       });
     }
+    //console.log("9031902jfjjdsjjd_____",((req.body)));
   
     // Create a Applicant
     const customer = new Applicant({
