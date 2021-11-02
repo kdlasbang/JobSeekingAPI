@@ -1,8 +1,8 @@
 # JobSeekingAPI
-## open terminal
-## dir src->
-## npm install
-## npm start or node server.js
+### open terminal
+### dir src->
+### npm install
+### npm start or node server.js  ((if any thing not defind, just use npm install "the_package_name")
 
 ## API testing:
 
